@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
+* {
+  font-family: 'Lato','Helvetica Neue', Arial, sans-serif;
+}
+
+.bg {
+  background: #3a3a3a;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  color: rgba(#fff, 0.85);
+  font-family: 'Raleway','Lato','Helvetica Neue', Arial, sans-serif;
+  font-size: 10vw;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 0 1px 9px rgba(#000, 0.8);
+  margin: auto;
+  margin-top: 0;
+  padding-top: 7vh;
+}
+
+.blog-card {
+  display: block;
+  position: relative;
+  top: 7vw;
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  box-shadow: 0 2px 10px rgba(#000, 0.85);
+  transition: all 450ms ease-out 0s;
+  overflow: hidden;
+  .blog-img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    top: -9999px;
+    left: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    overflow: hidden;
+  }
+  &:hover {
+    box-shadow: 0 2px 35px rgba(#000, 0.85);
+    .text-overlay {
+      background: rgba(#fff, 0.8);
+      height: 50%;
+      top: 50%;
+      transition: all 450ms ease-in-out 0s;
+    }
+    p {
+      height: 60px; 
+      transition: all 350ms ease-in-out 0s;
+      a {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.text-overlay {
+  position: relative;
+  background: rgba(#fff, 0.6);
+  width: 100%;
+  height: 40%;
+  top: 60%;
+  box-shadow: 0 -2px 12px rgba(#000, 0.3);
+  padding: 10px 12px;
+  overflow: hidden;
+  transition: all 450ms ease-in-out 0s;
+  cursor: pointer;
+  h2 {
+    color: rgba(#000, 0.85);
+    letter-spacing: 0.0225em;
+    width: auto;
+    margin: 0;
+  }
+  p {
+    color: #555;
+    width: 380px;
+    height: 38px;
+    margin: 8px 0;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  a {
+    color: #378AEE;
+    text-decoration: none;
+    transition: all 350ms linear;
+    visibility: hidden;
+    &:hover {
+      color: #449CC5;
+      border-bottom: 1px dotted #47A8F2;
+    }
+  }
+}
+
+.credit {
+  position: relative;
+  color: rgba(#fff, 0.85);
+  font-family: "Lato", 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  bottom: -22vh;
+  .creator-link {
+    color: rgba(#fff, 0.95);
+    font-family: 'Kaushan Script', 'Lato','Helvetica Neue',sans-serif;
+    font-size: 1.05em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 350ms linear;
+    &:hover {
+      color: #44BCC5;
+      text-shadow: 0 1px 3px rgba(#000, 0.6);
+      transition: all 350ms linear;
+    }
+  }
+}
