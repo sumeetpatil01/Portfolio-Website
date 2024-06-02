@@ -8,6 +8,10 @@
   width: 220px;
   height: 220px;
 }
+.networking-badge {
+  width: 140px;
+  height: 140px;
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
