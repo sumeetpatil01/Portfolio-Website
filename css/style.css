@@ -5,15 +5,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  .credly-badge {
-  width: 230px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
+
 }
 .networking-badge {
+  
+  width: 120px;
+  height: 120px;
+}
+.python-badge {
   
   width: 140px;
   height: 140px;
 }
-.python-badge {
+.essentialai-badge {
   
   width: 160px;
   height: 160px;
